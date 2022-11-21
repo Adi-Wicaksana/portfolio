@@ -1,0 +1,159 @@
+:root {
+    --navbar-bg: #f1f4f6;
+}
+
+.font-portfolio {
+    font-family: "Poppins-Bold";
+    color: #3b444a !important;
+}
+
+.font-portfolio-dot {
+    color: #0f90e5 !important;
+    font-size: 1.35em;
+}
+
+.navbar-custom {
+    background-color: var(--navbar-bg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.font-nav-link {
+    font-family: "Poppins-Medium";
+    color: #686868 !important;
+    font-size: 0.8rem;
+}
+
+.btn-lets-talk {
+    background-color: #0f90e5;
+    font-family: "Poppins-Medium";
+    font-size: 0.8rem;
+    border-radius: 10px;
+    color: #fbfdff;
+    box-shadow: 0px 3px 13px #c7deed;
+}
+
+.btn-lets-talk:hover {
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+.nav-link:after {
+    display: block;
+    content: '';
+    margin-top: 1px;
+    border-bottom: solid 3px #019fb6;
+    transform: scaleX(0);
+    transition: transform 350ms ease-in-out;
+}
+
+.nav-link:hover {
+    color: #0f90e5 !important;
+}
+
+.nav-link:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    font-size: 1rem !important;
+    padding: 0.25rem 0.45rem !important
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.05rem !important;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {}
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .nav-link:hover::after {
+        transform: scaleX(0.5);
+    }
+
+    .nav-link.active {
+        color: #0f90e5 !important;
+    }
+
+    .nav-link.active::after {
+        display: block;
+        content: '';
+        margin-top: 1px;
+        border-bottom: solid 3px #019fb6;
+        transform: scaleX(0.5);
+        transition: transform 350ms ease-in-out;
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .nav-link:hover::after {
+        transform: scaleX(0.5);
+    }
+
+    .nav-link.active {
+        color: #0f90e5 !important;
+    }
+
+    .nav-link.active::after {
+        display: block;
+        content: '';
+        margin-top: 1px;
+        border-bottom: solid 3px #019fb6;
+        transform: scaleX(0.5);
+        transition: transform 350ms ease-in-out;
+    }
+
+    .font-nav-link {
+        font-family: "Poppins-Medium";
+        color: #686868 !important;
+        font-size: 0.65rem;
+    }
+
+    .btn-lets-talk {
+        background-color: #0f90e5;
+        font-family: "Poppins-Medium";
+        font-size: 0.7rem;
+        border-radius: 10px;
+        color: #fbfdff;
+        box-shadow: 0px 3px 13px #c7deed;
+    }
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .nav-link:hover::after {
+        transform: scaleX(0.5);
+    }
+
+    .nav-link.active {
+        color: #0f90e5 !important;
+    }
+
+    .nav-link.active::after {
+        display: block;
+        content: '';
+        margin-top: 1px;
+        border-bottom: solid 3px #019fb6;
+        transform: scaleX(0.5);
+        transition: transform 350ms ease-in-out;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .nav-link:hover::after {
+        transform: scaleX(0.5);
+    }
+
+    .nav-link.active {
+        color: #0f90e5 !important;
+    }
+
+    .nav-link.active::after {
+        display: block;
+        content: '';
+        margin-top: 1px;
+        border-bottom: solid 3px #019fb6;
+        transform: scaleX(0.5);
+        transition: transform 350ms ease-in-out;
+    }
+}
