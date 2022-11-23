@@ -1,0 +1,193 @@
+.work-content-wrap {
+    min-height: 562px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #f1f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-title-work {
+    font-family: 'Poppins-Bold';
+    font-size: 1.2rem;
+    color: #3b444a;
+}
+
+.company-list-div {
+    border-left: 3px solid #afd8f3;
+    min-width: 195px;
+}
+
+.font-company-list {
+    font-family: 'Poppins-Medium';
+    font-size: 0.9rem;
+    color: #3f484e;
+}
+
+.font-company-list:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.font-job-title {
+    font-family: 'Poppins-Medium';
+    color: #3f484e;
+    font-size: 0.9rem;
+}
+
+.font-job-range {
+    font-size: 0.8rem;
+    color: #3f484e;
+}
+
+.font-job-desc {
+    font-family: 'Poppins-Regular';
+    font-size: 0.8rem;
+    color: #545454;
+    text-decoration: none;
+}
+
+ul li.font-job-desc {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+ul li.font-job-desc::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .work-content-wrap {
+        min-height: 1205px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: url('../../../resources/images/bg-sm-work.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .work-content-wrap {
+        min-height: 1205px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #f1f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .work-content-wrap {
+        min-height: 350px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #f1f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li.font-job-desc {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 3px;
+        list-style: none;
+    }
+
+    .font-title-work {
+        font-family: 'Poppins-Bold';
+        font-size: 0.9rem;
+        color: #3b444a;
+    }
+
+    .company-list-div {
+        border-left: 3px solid #afd8f3;
+        min-width: 135px;
+    }
+
+    .font-company-list {
+        font-family: 'Poppins-Medium';
+        font-size: 0.7rem;
+        color: #3f484e;
+    }
+
+    .font-job-title {
+        font-family: 'Poppins-Medium';
+        color: #3f484e;
+        font-size: 0.7rem;
+    }
+
+    .font-job-range {
+        font-size: 0.6rem;
+        color: #3f484e;
+    }
+
+    .font-job-desc {
+        font-family: 'Poppins-Regular';
+        font-size: 0.6rem;
+        color: #545454;
+    }
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .work-content-wrap {
+        min-height: 470px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #f1f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .font-title-work {
+        font-family: 'Poppins-Bold';
+        font-size: 1rem;
+        color: #3b444a;
+    }
+
+    .company-list-div {
+        border-left: 3px solid #afd8f3;
+        min-width: 165px;
+    }
+
+    .font-company-list {
+        font-family: 'Poppins-Medium';
+        font-size: 0.85rem;
+        color: #3f484e;
+    }
+
+    .font-job-title {
+        font-family: 'Poppins-Medium';
+        color: #3f484e;
+        font-size: 0.8rem;
+    }
+
+    .font-job-range {
+        font-size: 0.7rem;
+        color: #3f484e;
+    }
+
+    .font-job-desc {
+        font-family: 'Poppins-Regular';
+        font-size: 0.7rem;
+        color: #545454;
+    }
+
+    ul li.font-job-desc {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+}
