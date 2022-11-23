@@ -2,8 +2,10 @@ import React from "react";
 
 // stylesheet
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.js";
 import "./style.css";
 import "./font.css";
+import "./override.css";
 
 // component
 import Navbar from "../Navbar/Navbar";
@@ -11,7 +13,7 @@ import Main from "../../content/Main";
 
 function Skeleton() {
 	return (
-		<div className="mt-2 body-wrap">
+		<div>
 			<div className="container">
 				<Navbar />
 				<Main />

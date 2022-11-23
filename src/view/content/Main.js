@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useSelector } from "react-redux";
 
 // stylesheet
 import "swiper/css";
@@ -11,26 +12,31 @@ import Project from "./Project/Project";
 import About from "./About/About";
 
 function Main() {
-	const swiperMainRef = useRef(null);
+	const swiperRef = useRef(null);
+	const activeIndex = useSelector((state) => state.swiper_slide.index);
+
+	useEffect(() => {
+		swiperRef.current.swiper.slideTo(activeIndex);
+	}, [activeIndex])
 
 	return (
 		<Swiper
-			ref={swiperMainRef}
+			ref={swiperRef}
 			allowTouchMove={false}
 			scrollbar={{ draggable: true }}
 			slidesPerView={1}
-			onSlideChange={() => console.log("slide change")}
+			speed={1000}
 		>
-			<SwiperSlide>
+			<SwiperSlide key={0}>
 				<Home />
 			</SwiperSlide>
-			<SwiperSlide>
+			<SwiperSlide key={1}>
 				<Work />
 			</SwiperSlide>
-			<SwiperSlide>
+			<SwiperSlide key={2}>
 				<Project />
 			</SwiperSlide>
-			<SwiperSlide>
+			<SwiperSlide key={3}>
 				<About />
 			</SwiperSlide>
 		</Swiper>

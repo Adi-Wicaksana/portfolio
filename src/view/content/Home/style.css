@@ -1,0 +1,538 @@
+.body-wrap {
+    background-color: #eaeff2;
+}
+
+.font-greeting {
+    font-family: 'Poppins-Bold';
+    font-size: 1.4rem;
+    color: #3b444a;
+    margin-bottom: 0.5rem !important;
+}
+
+.font-name {
+    font-family: 'Phonk-Contrast';
+    font-size: 2.4rem;
+    color: #3f484e;
+    margin-bottom: 0.5rem !important;
+    text-shadow: 3px 2px 0px #fff, 4px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.font-description {
+    color: #646a6e;
+    font-family: 'Poppins-Regular';
+    font-size: 0.8rem;
+}
+
+.icon-medsos {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    padding: 0 0 !important;
+    font-size: 1.2rem;
+}
+
+.icon-medsos:hover {
+    background-color: #0f90e5;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px -10px;
+}
+
+.icon-medsos:hover>i {
+    color: white;
+}
+
+.icon-medsos-pos {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.home-pp-div {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.pp {
+    -webkit-filter: drop-shadow(5px 5px 10px #cacccd);
+    filter: drop-shadow(5px 5px 10px #cacccd);
+    max-height: 470px;
+}
+
+.home-content-wrap {
+    min-height: 562px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: url('../../../resources/images/bg-lg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-greeting-div {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.home-skill-div {
+    height: 100%;
+    flex-direction: column;
+}
+
+.home-familiar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+}
+
+.home-familiar-div {
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    width: 90%;
+    align-items: center;
+    border: 1px solid #F7F8FA;
+    border-radius: 10px;
+    position: relative;
+}
+
+.home-skill-wrap {
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.home-skill-logo {
+    height: 60px;
+    width: 60px;
+    background-color: #F9FAFC;
+    border-radius: 3px
+}
+
+.home-skill-desc {
+    height: 60px;
+    width: 80%;
+    background-color: #F9FAFC;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.font-skill-title {
+    font-family: 'Poppins-Medium';
+    font-size: 0.8rem;
+    margin-bottom: 0 !important;
+}
+
+.font-skill-desc {
+    font-family: 'Poppins-Regular';
+    font-size: 0.7rem;
+}
+
+.home-inspired-div {
+    display: flex;
+    height: 5%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.font-inspired {
+    font-family: 'Poppins-Medium';
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.5rem;
+    color: #646a6e;
+}
+
+.ribbon {
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+}
+
+.ribbon::before,
+.ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+}
+
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 205px;
+    padding: 5px 0;
+    background-color: #0F90E5;
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, .1);
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: 'Poppins-Medium';
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ribbon-top-right {
+    top: -5px;
+    right: 0;
+}
+
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.ribbon-top-right::before {
+    top: 0;
+    left: 0;
+}
+
+.ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+}
+
+.ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+}
+
+.swiper-wrapper.mousewheel {
+    transition-duration: 0.5s !important;
+}
+
+.swiper-familiar {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .home-content-wrap {
+        min-height: 1205px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: url('../../../resources/images/bg-sm.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-greeting-div {
+        width: 100%;
+        min-height: 350px;
+        display: flex;
+        align-items: center;
+    }
+
+    .home-medsos-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .font-greeting {
+        font-family: 'Poppins-Bold';
+        font-size: 1.2rem;
+        color: #3b444a;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .font-name {
+        font-family: 'Phonk-Contrast';
+        font-size: 2.1rem;
+        color: #3f484e;
+        margin-bottom: 0.5rem !important;
+        text-shadow: 3px 2px 0px #fff, 4px 3px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .font-description {
+        color: #646a6e;
+        font-family: 'Poppins-Regular';
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .home-content-wrap {
+        min-height: 1205px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: url('../../../resources/images/bg-sm.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-greeting-div {
+        width: 100%;
+        min-height: 350px;
+        display: flex;
+        align-items: center;
+    }
+
+    .home-medsos-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .font-greeting {
+        font-family: 'Poppins-Bold';
+        font-size: 1.2rem;
+        color: #3b444a;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .font-name {
+        font-family: 'Phonk-Contrast';
+        font-size: 2.1rem;
+        color: #3f484e;
+        margin-bottom: 0.5rem !important;
+        text-shadow: 3px 2px 0px #fff, 4px 3px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .font-description {
+        color: #646a6e;
+        font-family: 'Poppins-Regular';
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .home-content-wrap {
+        min-height: 350px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: url('../../../resources/images/bg-lg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-greeting-div {
+        width: 100%;
+        min-height: 290px;
+        display: flex;
+        align-items: center;
+    }
+
+    .home-familiar-div {
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        width: 90%;
+        align-items: center;
+        border: 1px solid #F7F8FA;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .font-greeting {
+        font-family: 'Poppins-Bold';
+        font-size: 1.25rem;
+        color: #3b444a;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .font-name {
+        font-family: 'Phonk-Contrast';
+        font-size: 1.5rem;
+        color: #3f484e;
+        margin-bottom: 0.5rem !important;
+        text-shadow: 3px 2px 0px #fff, 4px 3px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .font-description {
+        color: #646a6e;
+        font-family: 'Poppins-Regular';
+        font-size: 0.7rem;
+    }
+
+    .font-skill-title {
+        font-family: 'Poppins-Medium';
+        font-size: 0.7rem;
+        margin-bottom: 0 !important;
+    }
+
+    .font-skill-desc {
+        font-family: 'Poppins-Regular';
+        font-size: 0.5rem;
+    }
+
+    .icon-medsos {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #f8f9fa;
+        padding: 0 0 !important;
+        font-size: 1rem;
+    }
+
+    .icon-medsos:hover {
+        background-color: #0f90e5;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px -10px;
+    }
+
+    .icon-medsos:hover>i {
+        color: white;
+    }
+
+    .icon-medsos .mail {
+        font-size: 1.1rem !important;
+    }
+
+    .ribbon {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .ribbon span {
+        position: absolute;
+        display: block;
+        width: 190px;
+        padding: 2px 0;
+        background-color: #0F90E5;
+        box-shadow: 0 2.5px 5px rgba(0, 0, 0, .1);
+        color: #fff;
+        font-size: 0.7rem;
+        font-family: 'Poppins-Medium';
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .ribbon-top-right span {
+        left: -25px;
+        top: 18.5px;
+        transform: rotate(45deg);
+    }
+
+    .home-skill-logo {
+        height: 50px;
+        width: 50px;
+        background-color: #F9FAFC;
+        border-radius: 3px
+    }
+
+    .home-skill-desc {
+        height: 50px;
+        width: 80%;
+        background-color: #F9FAFC;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .home-content-wrap {
+        min-height: 470px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: url('../../../resources/images/bg-lg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-greeting-div {
+        width: 100%;
+        min-height: 410px;
+        display: flex;
+        align-items: center;
+    }
+
+    .font-greeting {
+        font-family: 'Poppins-Bold';
+        font-size: 1.25rem;
+        color: #3b444a;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .font-name {
+        font-family: 'Phonk-Contrast';
+        font-size: 1.9rem;
+        color: #3f484e;
+        margin-bottom: 0.5rem !important;
+        text-shadow: 3px 2px 0px #fff, 4px 3px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .font-description {
+        color: #646a6e;
+        font-family: 'Poppins-Regular';
+        font-size: 0.75rem;
+    }
+
+    .home-familiar-div {
+        display: flex;
+        flex-direction: column;
+        height: 255px;
+        width: 90%;
+        align-items: center;
+        border: 1px solid #F7F8FA;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .home-skill-logo {
+        height: 55px;
+        width: 55px;
+        background-color: #F9FAFC;
+        border-radius: 3px
+    }
+
+    .home-skill-desc {
+        height: 55px;
+        width: 80%;
+        background-color: #F9FAFC;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    .font-skill-title {
+        font-family: 'Poppins-Medium';
+        font-size: 0.7rem;
+        margin-bottom: 0 !important;
+    }
+
+    .font-skill-desc {
+        font-family: 'Poppins-Regular';
+        font-size: 0.595rem;
+    }
+
+    .ribbon {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .ribbon span {
+        position: absolute;
+        display: block;
+        width: 190px;
+        padding: 2px 0;
+        background-color: #0F90E5;
+        box-shadow: 0 2.5px 5px rgba(0, 0, 0, .1);
+        color: #fff;
+        font-size: 0.7rem;
+        font-family: 'Poppins-Medium';
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .ribbon-top-right span {
+        left: -25px;
+        top: 18.5px;
+        transform: rotate(45deg);
+    }
+}

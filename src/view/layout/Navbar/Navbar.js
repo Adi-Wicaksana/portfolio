@@ -1,9 +1,18 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { move } from "../../../features/swiper/moveSlice";
 
 // stylesheet
 import "./style.css";
 
 function Navbar() {
+	const activeIndex = useSelector((state) => state.swiper_slide.index);
+	const dispatch = useDispatch();
+
+	const moveSlide = (e) => {
+		dispatch(move(e.target.getAttribute("data-slide")))
+	}
+
 	return (
 		<nav className="navbar navbar-expand-sm navbar-expand-md navbar-custom navbar-light">
 			<div className="container-fluid">
@@ -25,44 +34,36 @@ function Navbar() {
 					<ul className="navbar-nav m-auto mb-2 mb-sm-0 mb-md-0 mb-lg-0">
 						<li className="nav-item ps-4 ps-md-2">
 							<button
-								className="btn btn-link nav-link active font-nav-link"
+								className={activeIndex === '0' ? "btn btn-link nav-link font-nav-link active" : "btn btn-link nav-link font-nav-link"}
 								data-slide="0"
-								onClick={(e) =>
-									console.log(e.target.getAttribute("data-slide"))
-								}
+								onClick={(e) => moveSlide(e)}
 							>
 								Home
 							</button>
 						</li>
 						<li className="nav-item ps-4 ps-md-2">
 							<button
-								className="btn btn-link nav-link font-nav-link"
+								className={activeIndex === '1' ? "btn btn-link nav-link font-nav-link active" : "btn btn-link nav-link font-nav-link"}
 								data-slide="1"
-								onClick={(e) =>
-									console.log(e.target.getAttribute("data-slide"))
-								}
+								onClick={(e) => moveSlide(e)}
 							>
 								Works
 							</button>
 						</li>
 						<li className="nav-item ps-4 ps-md-2">
 							<button
-								className="btn btn-link nav-link font-nav-link"
+								className={activeIndex === '2' ? "btn btn-link nav-link font-nav-link active" : "btn btn-link nav-link font-nav-link"}
 								data-slide="2"
-								onClick={(e) =>
-									console.log(e.target.getAttribute("data-slide"))
-								}
+								onClick={(e) => moveSlide(e)}
 							>
 								Projects
 							</button>
 						</li>
 						<li className="nav-item ps-4 ps-md-2">
 							<button
-								className="btn btn-link nav-link font-nav-link"
+								className={activeIndex === '3' ? "btn btn-link nav-link font-nav-link active" : "btn btn-link nav-link font-nav-link"}
 								data-slide="3"
-								onClick={(e) =>
-									console.log(e.target.getAttribute("data-slide"))
-								}
+								onClick={(e) => moveSlide(e)}
 							>
 								About me
 							</button>

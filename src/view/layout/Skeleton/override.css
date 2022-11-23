@@ -1,0 +1,22 @@
+.tooltip-inner {
+    background-color: white;
+    opacity: 1 !important;
+    color: black;
+    font-family: 'Poppins-Regular';
+    font-size: 7.5pt !important;
+    padding-top: 7.5px !important;
+    padding-bottom: 7.5px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    border-radius: 10px !important;
+}
+
+.row-no-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
