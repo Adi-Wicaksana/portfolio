@@ -82,7 +82,7 @@ function Work() {
 								<div>
 									<ul className="ps-2 ps-lg-4">
 										<li className="font-job-desc">
-											Collaborated with teams to develop mobile app called mTransport - decentralized
+											Collaborated with teams to develop mobile app called mTransport - centralized
 											delivery from dc to customer. I'm on the frontend, using react native.
 										</li>
 									</ul>
@@ -168,7 +168,7 @@ function Work() {
 							<div>
 								<ul className="ps-2 ps-lg-4">
 									<li className="font-job-desc">
-										Collaborated with teams to develop mobile app called mTransport - decentralized
+										Collaborated with teams to develop mobile app called mTransport - centralized
 										delivery from dc to customer. I'm on the frontend, using react native.
 									</li>
 								</ul>

@@ -24,9 +24,6 @@ function Navbar() {
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#nav-menu"
-					aria-controls="navbarTogglerDemo02"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
 				>
 					<span className="navbar-toggler-icon"></span>
 				</button>
@@ -70,9 +67,9 @@ function Navbar() {
 						</li>
 					</ul>
 					<form className="d-flex pe-3 mb-3 mb-sm-0 mb-md-0 mb-lg-0 ps-4 ps-md-2">
-						<button className="btn btn-lets-talk px-3" type="submit">
+						<a href="https://api.whatsapp.com/send/?phone=6285186110496&text&type=phone_number&app_absent=0" rel={"noopener noreferrer"} target={"_blank"} className="btn btn-lets-talk px-3" type="submit">
 							LET'S TALK
-						</button>
+						</a>
 					</form>
 				</div>
 			</div>

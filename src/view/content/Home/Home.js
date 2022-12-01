@@ -78,7 +78,7 @@ function Home() {
 														thresholdDelta: 1,
 														thresholdTime: 1
 													}}
-													direction="vertical"
+													direction={"vertical"}
 													freeMode={true}
 													grabCursor={true}
 													autoHeight={false}
@@ -108,7 +108,7 @@ function Home() {
 									</div>
 								</div>
 								<div className="home-inspired-div">
-									<p className="py-1 font-inspired">Design Inspired by : Irvan Moses</p>
+									{/* <p className="py-1 font-inspired">Design Inspired by : Irvan Moses</p> */}
 								</div>
 							</div>
 						</div>
