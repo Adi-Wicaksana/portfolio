@@ -3,7 +3,7 @@ import React from "react";
 import "./style.css";
 
 function Work() {
-	return (<div className="row row-no-margin swiper-slide">
+	return (<div className="row mx-0 swiper-slide">
 		<div className="col-12 d-flex align-items-center justify-content-center work-content-wrap">
 			{/* LARGE DEVICE */}
 			<div className="container d-none d-md-block">
