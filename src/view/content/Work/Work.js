@@ -4,7 +4,7 @@ import "./style.css";
 
 function Work() {
 	return (<div className="row row-no-margin swiper-slide">
-		<div className="col-12 work-content-wrap">
+		<div className="col-12 d-flex align-items-center justify-content-center work-content-wrap">
 			{/* LARGE DEVICE */}
 			<div className="container d-none d-md-block">
 				<div className="row">
@@ -97,7 +97,7 @@ function Work() {
 			<div className="container d-sm-block d-md-none">
 				<div className="row">
 					<div className="col-12">
-						<p className="font-title-work mb-font-title-work"> Where I've Worked </p>
+						<p className="font-title-work"> Where I've Worked </p>
 					</div>
 				</div>
 				<div className="row">
