@@ -1,7 +1,3 @@
-.body-wrap {
-    background-color: #eaeff2;
-}
-
 .font-greeting {
     font-family: 'Poppins-Bold';
     font-size: 1.4rem;
@@ -41,19 +37,6 @@
     color: white;
 }
 
-.icon-medsos-pos {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.home-pp-div {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
 .pp {
     -webkit-filter: drop-shadow(5px 5px 10px #cacccd);
     filter: drop-shadow(5px 5px 10px #cacccd);
@@ -70,39 +53,23 @@
 }
 
 .home-greeting-div {
-    width: 100%;
     min-height: 500px;
-    display: flex;
-    align-items: center;
-}
-
-.home-skill-div {
-    height: 100%;
-    flex-direction: column;
 }
 
 .home-familiar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 95%;
 }
 
 .home-familiar-div {
-    display: flex;
-    flex-direction: column;
     height: 290px;
     width: 90%;
-    align-items: center;
     border: 1px solid #F7F8FA;
     border-radius: 10px;
     position: relative;
 }
 
 .home-skill-wrap {
-    display: flex;
     border-radius: 10px;
-    width: 100%;
 }
 
 .home-skill-logo {
@@ -132,10 +99,7 @@
 }
 
 .home-inspired-div {
-    display: flex;
     height: 5%;
-    align-items: flex-end;
-    justify-content: flex-end;
 }
 
 .font-inspired {
@@ -224,17 +188,7 @@
     }
 
     .home-greeting-div {
-        width: 100%;
         min-height: 350px;
-        display: flex;
-        align-items: center;
-    }
-
-    .home-medsos-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
     }
 
     .font-greeting {
@@ -270,17 +224,7 @@
     }
 
     .home-greeting-div {
-        width: 100%;
         min-height: 350px;
-        display: flex;
-        align-items: center;
-    }
-
-    .home-medsos-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
     }
 
     .font-greeting {
@@ -316,18 +260,12 @@
     }
 
     .home-greeting-div {
-        width: 100%;
         min-height: 290px;
-        display: flex;
-        align-items: center;
     }
 
     .home-familiar-div {
-        display: flex;
-        flex-direction: column;
         height: 230px;
         width: 90%;
-        align-items: center;
         border: 1px solid #F7F8FA;
         border-radius: 10px;
         position: relative;
@@ -443,10 +381,7 @@
     }
 
     .home-greeting-div {
-        width: 100%;
         min-height: 410px;
-        display: flex;
-        align-items: center;
     }
 
     .font-greeting {
@@ -471,11 +406,8 @@
     }
 
     .home-familiar-div {
-        display: flex;
-        flex-direction: column;
         height: 255px;
         width: 90%;
-        align-items: center;
         border: 1px solid #F7F8FA;
         border-radius: 10px;
         position: relative;

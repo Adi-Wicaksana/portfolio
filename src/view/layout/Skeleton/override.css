@@ -11,11 +11,6 @@
     border-radius: 10px !important;
 }
 
-.row-no-margin {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
 .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none;

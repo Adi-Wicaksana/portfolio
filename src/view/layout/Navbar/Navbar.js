@@ -66,7 +66,7 @@ function Navbar() {
 							</button>
 						</li>
 					</ul>
-					<form className="d-flex pe-3 mb-3 mb-sm-0 mb-md-0 mb-lg-0 ps-4 ps-md-2">
+					<form className="d-flex pe-3 mb-3 mb-sm-0 ps-4 ps-md-2">
 						<a href="https://api.whatsapp.com/send/?phone=6285186110496&text&type=phone_number&app_absent=0" rel={"noopener noreferrer"} target={"_blank"} className="btn btn-lets-talk px-3" type="submit">
 							LET'S TALK
 						</a>
