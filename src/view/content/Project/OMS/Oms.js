@@ -11,7 +11,7 @@ function Oms() {
         <div className="row">
             <div className="col-12">
                 <div className="project-project-container">
-                    <div className="project-container">
+                    <div className="w-100 h-100 project-container">
                         <div className="col-lg-6 pt-5">
                             <p className='font-project-name my-0'>Project Name</p>
                             <p className='font-project-title'>Order Management System (OMS)</p>
@@ -19,7 +19,8 @@ function Oms() {
                                 Is a digital way to manage the lifecycle of an order.
                                 It tracks all the information and processes,
                                 including order entry, inventory management,
-                                fulfillment and after-sales service.</p>
+                                fulfillment and after-sales service.
+                            </p>
                         </div>
                         <div className="col-lg-6"></div>
                         {/* <div className="project-image-left-div">
