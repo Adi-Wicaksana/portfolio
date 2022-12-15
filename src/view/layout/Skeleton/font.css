@@ -14,8 +14,18 @@
 }
 
 @font-face {
+    font-family: 'Poppins-Italic';
+    src: local("poppins"),url('./../../../resources/fonts/poppins/Poppins-Italic.ttf') format("truetype");
+}
+
+@font-face {
     font-family: 'Poppins-Medium';
     src: local("poppins"), url('./../../../resources/fonts/poppins/Poppins-Medium.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Poppins-Medium-Italic';
+    src: local("poppins"), url('./../../../resources/fonts/poppins/Poppins-MediumItalic.ttf') format("truetype");
 }
 
 @font-face {

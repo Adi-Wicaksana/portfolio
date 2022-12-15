@@ -3,9 +3,9 @@ import React from "react";
 // stylesheet
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
-import "./style.css";
-import "./font.css";
-import "./override.css";
+import "./Skeleton.css";
+import "./Font.css";
+import "./Override.css";
 
 // component
 import Navbar from "../Navbar/Navbar";
