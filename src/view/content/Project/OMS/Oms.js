@@ -3,11 +3,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCreative } from "swiper";
 import { BsArrowRight } from "react-icons/bs";
 
+// import Swiper core and required modules
+import SwiperCore, {
+	Pagination
+} from 'swiper/core';
+
+import "swiper/css";
+import "swiper/css/pagination";
+
 import oms_dashboard from "../../../../resources/images/project/oms/oms_dashboard_f.png";
 import oms_detail from "../../../../resources/images/project/oms/oms_detail_f.png";
 import oms_graphic from "../../../../resources/images/project/oms/oms_graphic_f.png";
 
+// install Swiper modules
+SwiperCore.use([Pagination]);
+
 function Oms() {
+	const pagination = {
+		"clickable": true,
+		"renderBullet": function (index, className) {
+			return '<span class="'+className+' custom-pagination-project"></span>';
+		}
+	}
+
 	return (
 		<div className="row">
 			<div className="col-12">
@@ -61,22 +79,11 @@ function Oms() {
 						</div>
 
 						<div className="col-lg-6">
-							<Swiper
-								spaceBetween={50}
-								slidesPerView={1}
-								onSlideChange={() => console.log("slide change")}
-								onSwiper={(swiper) => console.log(swiper)}
-								style={{ height: "100%", background: "red" }}
-							>
-								<SwiperSlide>Slide 1</SwiperSlide>
-								<SwiperSlide>Slide 2</SwiperSlide>
-								<SwiperSlide>Slide 3</SwiperSlide>
+							<Swiper pagination={pagination} style={{ height: '100%', backgroundColor: 'red' }}>
+								<SwiperSlide>1</SwiperSlide>
+								<SwiperSlide>2</SwiperSlide>
+								<SwiperSlide>3</SwiperSlide>
 							</Swiper>
-							{/* <img
-								className="img-fluid"
-								alt="oms_dashboard"
-								src={oms_dashboard}
-							/> */}
 						</div>
 					</div>
 				</div>
