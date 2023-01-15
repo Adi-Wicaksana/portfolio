@@ -93,7 +93,7 @@ function Home() {
 									type="light"
 									effect="solid"
 								>
-									<span>@wicaksana_adi</span>
+									<span>wicaksana_adi</span>
 								</ReactTooltip>
 							</div>
 						</div>

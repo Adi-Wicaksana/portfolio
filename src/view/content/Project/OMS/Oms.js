@@ -4,27 +4,27 @@ import { Autoplay, EffectCreative } from "swiper";
 import { BsArrowRight } from "react-icons/bs";
 
 // import Swiper core and required modules
-import SwiperCore, {
-	Pagination
-} from 'swiper/core';
+import SwiperCore, { Pagination } from "swiper/core";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-import oms_dashboard from "../../../../resources/images/project/oms/oms_dashboard_f.png";
-import oms_detail from "../../../../resources/images/project/oms/oms_detail_f.png";
-import oms_graphic from "../../../../resources/images/project/oms/oms_graphic_f.png";
+import oms_dashboard from "../../../../resources/images/project/oms/oms_dashboard_p.png";
+import oms_detail from "../../../../resources/images/project/oms/oms_detail_p.png";
+import oms_graphic from "../../../../resources/images/project/oms/oms_graphic_p.png";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);
 
 function Oms() {
 	const pagination = {
-		"clickable": true,
-		"renderBullet": function (index, className) {
-			return '<span class="'+className+' custom-pagination-project"></span>';
-		}
-	}
+		clickable: true,
+		renderBullet: function (index, className) {
+			return (
+				'<span class="' + className + ' custom-pagination-project"></span>'
+			);
+		},
+	};
 
 	return (
 		<div className="row">
@@ -79,10 +79,51 @@ function Oms() {
 						</div>
 
 						<div className="col-lg-6">
-							<Swiper pagination={pagination} style={{ height: '100%', backgroundColor: 'red' }}>
-								<SwiperSlide>1</SwiperSlide>
-								<SwiperSlide>2</SwiperSlide>
-								<SwiperSlide>3</SwiperSlide>
+							<Swiper
+								modules={[Autoplay, EffectCreative]}
+								className="oms-swiper"
+								autoplay={true}
+								speed={1000}
+								pagination={pagination}
+								slidesPerView={1}
+								effect={"creative"}
+								creativeEffect={{
+									prev: {
+										shadow: false,
+										translate: [0, 0, -400],
+									},
+									next: {
+										translate: ["100%", 0, 0],
+									},
+								}}
+							>
+								<SwiperSlide>
+									<div className="oms-slide">
+										<img
+											src={oms_dashboard}
+											className="oms-image"
+											alt="oms dashboard"
+										/>
+									</div>
+								</SwiperSlide>
+								<SwiperSlide>
+									<div className="oms-slide">
+										<img
+											src={oms_detail}
+											className="oms-image"
+											alt="oms detail"
+										/>
+									</div>
+								</SwiperSlide>
+								<SwiperSlide>
+									<div className="oms-slide">
+										<img
+											src={oms_graphic}
+											className="oms-image"
+											alt="oms graphic"
+										/>
+									</div>
+								</SwiperSlide>
 							</Swiper>
 						</div>
 					</div>
