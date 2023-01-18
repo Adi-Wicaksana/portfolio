@@ -139,7 +139,7 @@
     }
 }
 
-@media (min-width: 1199.98px) {
+@media (min-width: 1199.98px) and (max-width: 1920.98px) {
     .nav-link:hover::after {
         transform: scaleX(0.5);
     }

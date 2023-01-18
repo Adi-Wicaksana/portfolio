@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import oms_dashboard from "../../../../resources/images/project/oms/oms_dashboard_p.png";
 import oms_detail from "../../../../resources/images/project/oms/oms_detail_p.png";
 import oms_graphic from "../../../../resources/images/project/oms/oms_graphic_p.png";
+import oms_scheme from "../../../../resources/images/project/oms/oms_scheme_p.png";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);
@@ -97,6 +98,15 @@ function Oms() {
 									},
 								}}
 							>
+								<SwiperSlide>
+									<div className="oms-slide">
+										<img
+											src={oms_scheme}
+											className="oms-image"
+											alt="oms scheme"
+										/>
+									</div>
+								</SwiperSlide>
 								<SwiperSlide>
 									<div className="oms-slide">
 										<img
