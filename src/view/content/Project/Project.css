@@ -24,12 +24,12 @@
 
 .font-project-desc {
     font-family: 'Poppins-Regular';
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #3b444a;
 }
 
 .font-project-title {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Medium';
     font-size: 0.9rem;
     color: #3b444a;
 }
@@ -66,7 +66,7 @@
 }
 
 .font-project-tech {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-family: 'Poppins-Italic';
 }
 
@@ -128,4 +128,75 @@
 .oms-image {
     width: 90%;
     height: 90%;
+    max-height: 315px;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {}
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .project-content-wrap {
+        min-height: 470px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: url('../../../resources/images/bg-lg-project.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .font-project {
+        font-family: 'Poppins-Bold';
+        font-size: 1rem;
+        color: #3b444a;
+    }    
+    
+    .font-project-name {
+        font-family: 'Poppins-Bold';
+        font-size: 0.85rem;
+        color: #3b444a;
+    }
+
+    .font-project-title {
+        font-family: 'Poppins-Medium';
+        font-size: 0.75rem;
+        color: #3b444a;
+    }
+    
+    .font-project-desc {
+        font-family: 'Poppins-Regular';
+        font-size: 0.7rem;
+        color: #3b444a;
+    }
+    
+    .font-project-technical {
+        font-size: 0.85rem;
+        font-family: 'Poppins-Bold';
+    }
+
+    .font-project-tech {
+        font-size: 0.75rem;
+        font-family: 'Poppins-Italic';
+    }
+
+    .font-project-nav {
+        font-family: 'Poppins-Medium';
+        font-size: 0.8rem;
+    }
+    
+    .font-next-project {
+        font-family: 'Poppins-Regular';
+        font-size: 0.8rem;
+    }
+
+    .oms-image {
+        width: 90%;
+        height: 90%;
+        max-height: 275px;
+    }
 }
