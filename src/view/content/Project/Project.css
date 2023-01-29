@@ -107,28 +107,8 @@
     transition: transform 0.5s;
 }
 
-.oms-swiper {
-    height: 100%;
-    background-image: url('./../../../resources/images/project/oms/bg-oms.jpg');
-    background-size: cover;
-}
-
-.oms-swiper.swiper-horizontal>.swiper-pagination-bullets {
-    bottom: 3px;
-}
-
-.oms-slide {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.oms-image {
-    width: 90%;
-    height: 90%;
-    max-height: 315px;
+.next-project-btn {
+    text-decoration: none;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {}
@@ -192,11 +172,5 @@
     .font-next-project {
         font-family: 'Poppins-Regular';
         font-size: 0.8rem;
-    }
-
-    .oms-image {
-        width: 90%;
-        height: 90%;
-        max-height: 275px;
     }
 }

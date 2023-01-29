@@ -2,10 +2,13 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCreative } from "swiper";
 import { BsArrowRight } from "react-icons/bs";
+import { useDispatch } from "react-redux";
+import { move } from "../../../../features/swiper/projectSlice";
 
 // import Swiper core and required modules
 import SwiperCore, { Pagination } from "swiper/core";
 
+import "./Oms.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -18,6 +21,12 @@ import oms_scheme from "../../../../resources/images/project/oms/oms_scheme_p.pn
 SwiperCore.use([Pagination]);
 
 function Oms() {
+	const dispatch = useDispatch();
+
+	const moveSlide = () => {
+		dispatch(move(1));
+	};
+
 	const pagination = {
 		clickable: true,
 		renderBullet: function (index, className) {
@@ -68,12 +77,14 @@ function Oms() {
 
 							<div className="project-nav-div">
 								<div className="col-6 font-project-nav">
-									Website Application <br />
-									March 2019
+									Website Application
 								</div>
 								<div className="col-6 d-flex justify-content-end align-items-end font-next-project">
 									<div className="d-flex justify-content-center align-items-center">
-										Next Project <BsArrowRight className="mx-2" size={18} />
+										<button className={"btn next-project-btn btn-link font-nav-link"}
+											onClick={() => moveSlide()}>
+											Next Project <BsArrowRight className="mx-2" size={18} />
+										</button>
 									</div>
 								</div>
 							</div>

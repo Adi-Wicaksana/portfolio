@@ -20,7 +20,7 @@ import sails from "../../resources/images/familiar/sails.png";
 import vue from "../../resources/images/familiar/vue.png";
 
 export const generateSlice = createSlice({
-    name: "swiper_generate",
+    name: "familiar",
     initialState: {
         data: [
             {

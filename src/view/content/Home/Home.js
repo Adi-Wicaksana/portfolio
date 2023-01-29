@@ -13,7 +13,7 @@ import "swiper/css/free-mode";
 import "./Home.css";
 
 function Home() {
-	const familiars = useSelector((state) => state.swiper_generate.data);
+	const familiars = useSelector((state) => state.familiar.data);
 
 	return (
 		<div className="row mx-0 swiper-slide">

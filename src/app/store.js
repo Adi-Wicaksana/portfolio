@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import moveReducer from "../features/swiper/moveSlice";
-import generateReducer from "../features/swiper/generateSlice";
+import navbarReducer from "../features/swiper/navbarSlice";
+import generateReducer from "../features/swiper/familiarSlice";
+import projectReducer from "../features/swiper/projectSlice";
 
 export default configureStore({
 	reducer: {
-		swiper_slide: moveReducer,
-		swiper_generate: generateReducer,
+		familiar: generateReducer,
+		navbar: navbarReducer,
+		project: projectReducer
 	},
 });

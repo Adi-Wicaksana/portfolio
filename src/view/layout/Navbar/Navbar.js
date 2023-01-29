@@ -1,12 +1,12 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { move } from "../../../features/swiper/moveSlice";
+import { move } from "../../../features/swiper/navbarSlice";
 
 // stylesheet
 import "./Navbar.css";
 
 function Navbar() {
-	const activeIndex = useSelector((state) => state.swiper_slide.index);
+	const activeIndex = useSelector((state) => state.navbar.index);
 	const dispatch = useDispatch();
 
 	const moveSlide = (e) => {

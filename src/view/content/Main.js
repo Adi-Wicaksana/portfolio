@@ -13,7 +13,7 @@ import About from "./About/About";
 
 function Main() {
 	const swiperRef = useRef(null);
-	const activeIndex = useSelector((state) => state.swiper_slide.index);
+	const activeIndex = useSelector((state) => state.navbar.index);
 
 	useEffect(() => {
 		swiperRef.current.swiper.slideTo(activeIndex);
