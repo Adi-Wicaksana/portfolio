@@ -2,69 +2,121 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCreative } from "swiper";
 
-import yom_online from "../../../../resources/images/project/yom/yom_online.jpg";
-import yom_middleware from "../../../../resources/images/project/yom/yom_middleware.jpg";
-import yom_homepage from "../../../../resources/images/project/yom/yom_homepage.jpg";
+// import Swiper core and required modules
+import SwiperCore, { Pagination } from "swiper/core";
+
+import "./Yom.css";
+import "swiper/css";
+import "swiper/css/pagination";
+
+import yom_scheme from "../../../../resources/images/project/yom/yom_scheme_p.png";
+import yom_magento from "../../../../resources/images/project/yom/yom_magento_p.png";
+
+// install Swiper modules
+SwiperCore.use([Pagination]);
 
 function Yom() {
+
+    const pagination = {
+        clickable: true,
+        renderBullet: function (index, className) {
+            return (
+                '<span class="' + className + ' custom-pagination-project"></span>'
+            );
+        },
+    };
+
     return (
-        <div className="project-container">
-            <div className="project-image-right-div">
-                <Swiper
-                    modules={[Autoplay, EffectCreative]}
-                    effect={"creative"}
-                    creativeEffect={{
-                        prev: {
-                            shadow: true,
-                            translate: [0, 0, -400],
-                        },
-                        next: {
-                            translate: ["-100%", 0, 0],
-                        },
-                    }}
-                    slidesPerView={1}
-                    autoplay={true}
-                    loop={true}
-                    allowTouchMove={false}
-                    speed={1000}
-                >
-                    <SwiperSlide>
-                        <div className="project-slide">
-                            <img alt="yom_online" className="img-fluid p-1"
-                                src={yom_online} />
+        <div className="row">
+            <div className="col-12">
+                <div className="project-project-container">
+                    <div className="w-100 h-100 row project-container">
+                    <div className="h-100 col-lg-6 pt-5">
+                            <div className="project-desc-div">
+                                <p className="font-project-name my-0">Project Name</p>
+                                <p className="font-project-title">
+                                    Yogya Online Mobile (YOM) - Middleware
+                                </p>
+                                <p className="font-project-desc">
+                                is a layer of software that enables interaction and transmission of information between 
+                                assorted applications and services.
+                                </p>
+                                <div className="my-5">
+                                    <p className="font-project-technical my-0">Technology</p>
+                                    <div className="project-tech-div">
+                                        <span className="project-tech-span font-project-tech">
+                                            Javascript
+                                        </span>
+                                        <span className="project-tech-span font-project-tech">
+                                            Sails.js
+                                        </span>
+                                        <span className="project-tech-span font-project-tech">
+                                            HTML
+                                        </span>
+                                        <span className="project-tech-span font-project-tech">
+                                            CSS
+                                        </span>
+                                        <span className="project-tech-span font-project-tech">
+                                            Redis
+                                        </span>
+                                        <span className="project-tech-span font-project-tech">
+                                            PostgreSQL
+                                        </span>
+                                        <span className="project-tech-span font-project-tech">
+                                            Magento API
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="project-nav-div">
+                                <div className="col-6 font-project-nav">
+                                    Website Application <br/>
+                                    Middleware
+                                </div>
+                            </div>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="project-slide">
-                            <img alt="yom_middleware" className="img-fluid p-1"
-                                src={yom_middleware} />
+                        <div className="col-lg-6">
+                            <Swiper
+                                modules={[Autoplay, EffectCreative]}
+                                className="yom-swiper"
+                                autoplay={false}
+                                speed={1000}
+                                pagination={pagination}
+                                slidesPerView={1}
+                                effect={"creative"}
+                                grabCursor={true}
+                                creativeEffect={{
+                                    prev: {
+                                        shadow: false,
+                                        translate: [0, 0, -400],
+                                    },
+                                    next: {
+                                        translate: ["100%", 0, 0],
+                                    },
+                                }}
+                            >
+                                <SwiperSlide>
+                                    <div className="yom-slide">
+                                        <img
+                                            src={yom_scheme}
+                                            className="yom-image"
+                                            alt="yom scheme"
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="yom-slide">
+                                        <img
+                                            src={yom_magento}
+                                            className="yom-image"
+                                            alt="yom magento"
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="project-slide">
-                            <img alt="yom_homepage" className="img-fluid p-1"
-                                src={yom_homepage} />
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
-            </div>
-            <div className="project-content-right-div">
-                <div className="project-title-right-div">
-                    <p className="font-featured-project">Featured project</p>
-                    <h4 className="font-featured-project-name">Middleware & Homepage YOM</h4>
-                    <div className="project-desc-right-div p-3">
-                        <p className="font-information mb-0">Middleware Yogya Online Mobile (YOM) is Application Programming Interface (API) that enables 
-                        kinds of communication between mobile app and magento. <br/> <br/> 
-                        Homepage YOM is dynamic page that list of content controlled by user who has role to control in content management system web app.
-                        </p>
                     </div>
-                </div>
-                <div className="pt-4 project-tech-right-div">
-                    <span className="px-2">Javascript</span>
-                    <span className="px-2">CSS</span>
-                    <span className="px-2">HTML</span>
-                    <span className="px-2">Magento</span>
-                    <span className="px-2">Sails.JS</span>
                 </div>
             </div>
         </div>

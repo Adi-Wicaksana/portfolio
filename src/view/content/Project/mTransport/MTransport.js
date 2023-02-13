@@ -1,42 +1,130 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectCreative } from "swiper";
 
-import mtransport_all from "../../../../resources/images/project/mtransport/mtransport_all.png";
+// import Swiper core and required modules
+import SwiperCore, { Pagination } from "swiper/core";
+
+import "./Mtransport.css";
+import "swiper/css";
+import "swiper/css/pagination";
+
+import mtransport_scheme from "../../../../resources/images/project/mtransport/mtransport_scheme_p.png";
+import mtransport_dashboard from "../../../../resources/images/project/mtransport/mtransport_dashboard_p.png";
+import mtransport_track from "../../../../resources/images/project/mtransport/mtransport_track_p.png";
+
+// install Swiper modules
+SwiperCore.use([Pagination]);
 
 function MTransport() {
+
+    const pagination = {
+        clickable: true,
+        renderBullet: function (index, className) {
+            return (
+                '<span class="' + className + ' custom-pagination-project"></span>'
+            );
+        },
+    };
+
     return (
-        <div className="project-container">
-            <div className="project-image-right-div">
-                <Swiper
-                 slidesPerView={1}
-                 autoplay={true}
-                 loop={true}
-                 allowTouchMove={false}
-                 speed={1000}
-                 >
-                    <SwiperSlide>
-                        <div className="project-slide">
-                            <img alt="mtransport_all" className="img-fluid p-1"
-                                src={mtransport_all} />
+        <div className="row">
+            <div className="col-12">
+                <div className="project-project-container">
+                    <div className="w-100 h-100 row project-container">
+                        <div className="h-100 col-lg-6 pt-5">
+                            <div className="project-desc-div">
+                                <p className="font-project-name my-0">Project Name</p>
+                                <p className="font-project-title">
+                                    mTransport
+                                </p>
+                                <p className="font-project-desc">
+                                    a mobile application that functions to
+                                    manage delivery order to hands of customer
+                                    who order from Yogya Electronic (Yo-El) by distribution center (DC).
+
+                                    <br /><br />
+                                    Integration with Tracking Order  <br />
+                                    Tracking order is a website that has information
+                                    about status delivery for customer who order from Yogya Electronic (Yo-El).
+                                </p>
+                                <div className="my-5">
+                                    <p className="font-project-technical my-0">Technology</p>
+                                    <div className="project-tech-div">
+                                        <span className="project-tech-span font-project-tech">
+                                            React Native
+                                        </span>
+                                        <span className="project-tech-span font-project-tech">
+                                            API
+                                        </span>
+                                        <span className="project-tech-span font-project-tech">
+                                            Laravel
+                                        </span>
+                                        <span className="project-tech-span font-project-tech">
+                                            PHP
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="project-nav-div">
+                                <div className="col-6 font-project-nav">
+                                    Mobile Application <br />
+                                    Website Application
+                                </div>
+                            </div>
                         </div>
-                    </SwiperSlide>
-                </Swiper>
-            </div>
-            <div className="project-content-right-div">
-                <div className="project-title-right-div">
-                    <p className="font-featured-project">Featured project</p>
-                    <h4 className="font-featured-project-name">mTransport</h4>
-                    <div className="project-desc-right-div p-3">
-                        <p className="font-information mb-0">mTransport is
-                            a mobile application that functions to 
-                            manage delivery order to hands of customer 
-                            who order from Yogya Electronic (Yo-El) by distribution center (DC).
-                            </p>
+
+                        <div className="col-lg-6">
+                            <Swiper
+                                modules={[Autoplay, EffectCreative]}
+                                className="mtransport-swiper"
+                                autoplay={false}
+                                speed={1000}
+                                pagination={pagination}
+                                slidesPerView={1}
+                                effect={"creative"}
+                                grabCursor={true}
+                                creativeEffect={{
+                                    prev: {
+                                        shadow: false,
+                                        translate: [0, 0, -400],
+                                    },
+                                    next: {
+                                        translate: ["100%", 0, 0],
+                                    },
+                                }}
+                            >
+                                <SwiperSlide>
+                                    <div className="mtransport-slide">
+                                        <img
+                                            src={mtransport_scheme}
+                                            className="mtransport-image"
+                                            alt="mtransport scheme"
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="mtransport-slide">
+                                        <img
+                                            src={mtransport_dashboard}
+                                            className="mtransport-image"
+                                            alt="mtransport dashboard"
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="mtransport-slide">
+                                        <img
+                                            src={mtransport_track}
+                                            className="mtransport-image"
+                                            alt="mtransport track"
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
                     </div>
-                </div>
-                <div className="pt-4 project-tech-right-div">
-                    <span className="px-2">React Native</span>
-                    <span className="px-2">API</span>
                 </div>
             </div>
         </div>

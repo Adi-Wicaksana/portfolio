@@ -68,19 +68,6 @@ function Navbar() {
 								Projects
 							</button>
 						</li>
-						<li className="nav-item ps-4 ps-md-2">
-							<button
-								className={
-									activeIndex === "3"
-										? "btn btn-link nav-link font-nav-link active"
-										: "btn btn-link nav-link font-nav-link"
-								}
-								data-slide="3"
-								onClick={(e) => moveSlide(e)}
-							>
-								About me
-							</button>
-						</li>
 					</ul>
 					<form className="d-flex pe-3 mb-3 mb-sm-0 ps-4 ps-md-2">
 						<a

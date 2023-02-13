@@ -1,9 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCreative } from "swiper";
-import { BsArrowRight } from "react-icons/bs";
-import { useDispatch } from "react-redux";
-import { move } from "../../../../features/swiper/projectSlice";
 
 // import Swiper core and required modules
 import SwiperCore, { Pagination } from "swiper/core";
@@ -21,11 +18,6 @@ import oms_scheme from "../../../../resources/images/project/oms/oms_scheme_p.pn
 SwiperCore.use([Pagination]);
 
 function Oms() {
-	const dispatch = useDispatch();
-
-	const moveSlide = () => {
-		dispatch(move(1));
-	};
 
 	const pagination = {
 		clickable: true,
@@ -79,14 +71,6 @@ function Oms() {
 								<div className="col-6 font-project-nav">
 									Website Application
 								</div>
-								<div className="col-6 d-flex justify-content-end align-items-end font-next-project">
-									<div className="d-flex justify-content-center align-items-center">
-										<button className={"btn next-project-btn btn-link font-nav-link"}
-											onClick={() => moveSlide()}>
-											Next Project <BsArrowRight className="mx-2" size={18} />
-										</button>
-									</div>
-								</div>
 							</div>
 						</div>
 
@@ -94,11 +78,12 @@ function Oms() {
 							<Swiper
 								modules={[Autoplay, EffectCreative]}
 								className="oms-swiper"
-								autoplay={true}
+								autoplay={false}
 								speed={1000}
 								pagination={pagination}
 								slidesPerView={1}
 								effect={"creative"}
+                                grabCursor={true}
 								creativeEffect={{
 									prev: {
 										shadow: false,

@@ -10,7 +10,7 @@ function Work() {
 				<div className="container d-none d-md-block">
 					<div className="row">
 						<div className="col-12">
-							<p className="font-title-work mb-font-title-work text-center">
+							<p className="font-title-work text-center">
 								{" "}
 								Where I've Worked{" "}
 							</p>

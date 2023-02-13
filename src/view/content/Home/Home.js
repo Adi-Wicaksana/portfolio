@@ -1,9 +1,10 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { BsWhatsapp, BsInstagram } from "react-icons/bs";
 import { FaRegEnvelope } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, FreeMode } from "swiper";
+import { myExperience } from "../../../features/about/personalSlice";
 import ReactTooltip from "react-tooltip";
 
 import pp from "../../../resources/images";
@@ -13,6 +14,14 @@ import "swiper/css/free-mode";
 import "./Home.css";
 
 function Home() {
+	const dispatch = useDispatch();
+
+	const experience = useSelector((state) => state.personal.experience);
+
+	useEffect(() => {
+		dispatch(myExperience());
+	}, [dispatch])
+
 	const familiars = useSelector((state) => state.familiar.data);
 
 	return (
@@ -29,7 +38,7 @@ function Home() {
 										a Full Stack Developer located in Indonesia. I build
 										anything from mobile to web app.
 										<br />
-										<br />4 years of experience in web development. Feel free to
+										<br />{experience} years of experience in web development. Feel free to
 										talk to me okay.
 									</p>
 								</div>

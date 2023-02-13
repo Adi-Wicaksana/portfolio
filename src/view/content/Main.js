@@ -9,7 +9,6 @@ import "swiper/css";
 import Home from "./Home/Home";
 import Work from "./Work/Work";
 import Project from "./Project/Project";
-import About from "./About/About";
 
 function Main() {
 	const swiperRef = useRef(null);
@@ -35,9 +34,6 @@ function Main() {
 			</SwiperSlide>
 			<SwiperSlide key={2}>
 				<Project />
-			</SwiperSlide>
-			<SwiperSlide key={3}>
-				<About />
 			</SwiperSlide>
 		</Swiper>
 	);
