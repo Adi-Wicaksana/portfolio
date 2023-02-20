@@ -6,7 +6,7 @@
 }
 
 .pettycash-swiper.swiper-horizontal>.swiper-pagination-bullets {
-    bottom: 3px;
+    bottom: 20px;
 }
 
 .pettycash-slide {
@@ -23,16 +23,50 @@
     max-height: 350px;
 }
 
-@media (min-width: 0px) and (max-width: 575.98px) {}
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .pettycash-image {
+        width: 90%;
+        height: 60%;
+        max-height: 275px;
+    }
 
-@media (min-width: 575.98px) and (max-width: 767.98px) {}
+    .pettycash-swiper.swiper-horizontal>.swiper-pagination-bullets {
+        bottom: 50px;
+    }
+}
 
-@media (min-width: 767.98px) and (max-width: 991.98px) {}
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .pettycash-image {
+        width: 90%;
+        height: 60%;
+        max-height: 275px;
+    }
+
+    .pettycash-swiper.swiper-horizontal>.swiper-pagination-bullets {
+        bottom: 50px;
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .pettycash-image {
+        width: 90%;
+        height: 60%;
+        max-height: 275px;
+    }
+
+    .pettycash-swiper.swiper-horizontal>.swiper-pagination-bullets {
+        bottom: 50px;
+    }
+}
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
     .pettycash-image {
         width: 90%;
         height: 90%;
         max-height: 275px;
+    }
+
+    .pettycash-swiper.swiper-horizontal>.swiper-pagination-bullets {
+        bottom: 55px;
     }
 }

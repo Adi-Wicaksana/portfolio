@@ -113,7 +113,7 @@
     .btn-lets-talk {
         background-color: #0f90e5;
         font-family: "Poppins-Medium";
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         border-radius: 10px;
         color: #fbfdff;
         box-shadow: 0px 3px 13px #c7deed;
@@ -136,6 +136,21 @@
         border-bottom: solid 3px #019fb6;
         transform: scaleX(0.5);
         transition: transform 350ms ease-in-out;
+    }    
+
+    .font-nav-link {
+        font-family: "Poppins-Medium";
+        color: #686868 !important;
+        font-size: 0.725rem;
+    }
+
+    .btn-lets-talk {
+        background-color: #0f90e5;
+        font-family: "Poppins-Medium";
+        font-size: 0.7rem;
+        border-radius: 10px;
+        color: #fbfdff;
+        box-shadow: 0px 3px 13px #c7deed;
     }
 }
 

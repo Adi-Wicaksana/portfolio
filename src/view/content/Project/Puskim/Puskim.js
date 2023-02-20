@@ -32,8 +32,8 @@ function Oms() {
             <div className="col-12">
                 <div className="project-project-container">
                     <div className="w-100 h-100 row project-container">
-                        <div className="h-100 col-lg-6 pt-5">
-                            <div className="project-desc-div">
+                        <div className="col-12 col-sm-6 col-lg-6 px-0">
+                            <div className="project-desc-div pt-5">
                                 <p className="font-project-name my-0">Project Name</p>
                                 <p className="font-project-title">
                                     <a href="http://rsa.ciptakarya.pu.go.id/2021/index.php" target={'_blank'} rel="noreferrer">Desain Spektra Indonesia 2021</a>
@@ -44,7 +44,7 @@ function Oms() {
                                     Housing and Settlements Research and Development Center, Balitbang,
                                     Ministry of Public Works and Public Housing
                                 </p>
-                                <div className="my-5">
+                                <div className="my-sm-1 my-lg-5">
                                     <p className="font-project-technical my-0">Technology</p>
                                     <div className="project-tech-div">
                                         <span className="project-tech-span font-project-tech">
@@ -70,7 +70,7 @@ function Oms() {
                             </div>
                         </div>
 
-                        <div className="col-lg-6">
+                        <div className="col-12 col-sm-6 col-lg-6">
                             <Swiper
                                 modules={[Autoplay, EffectCreative]}
                                 className="puskim-swiper"

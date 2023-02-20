@@ -17,13 +17,12 @@ function Project() {
 	const activeIndex = useSelector((state) => state.project.index);
 
 	useEffect(() => {
-		console.log(activeIndex)
 		swiperRef.current.swiper.slideTo(activeIndex);
 	}, [activeIndex])
 
 	const moveSlide = (x) => {
-        dispatch(move(x));
-    };
+		dispatch(move(x));
+	};
 
 	return (
 		<div className="row mx-0 swiper-slide">
@@ -31,9 +30,12 @@ function Project() {
 				<div className="container">
 					<div className="row">
 						<div className="col-12">
-							<p className="font-project text-center">
+							<p className="font-project mb-sm-1 mb-md-1 mb-lg-5 d-none d-md-block text-center">
 								{" "}
 								Some Things I've Built{" "}
+							</p>
+							<p className="font-project mb-sm-1 mb-md-1 mb-lg-5 d-block d-md-none">
+								Some Things I've Built
 							</p>
 						</div>
 					</div>

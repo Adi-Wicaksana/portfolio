@@ -33,8 +33,8 @@ function Oms() {
 			<div className="col-12">
 				<div className="project-project-container">
 					<div className="w-100 h-100 row project-container">
-						<div className="h-100 col-lg-6 pt-5">
-							<div className="project-desc-div">
+						<div className="col-12 col-sm-6 col-lg-6 px-0">
+							<div className="project-desc-div pt-5">
 								<p className="font-project-name my-0">Project Name</p>
 								<p className="font-project-title">
 									Order Management System (OMS)
@@ -45,7 +45,7 @@ function Oms() {
 									entry, inventory management, fulfillment and after-sales
 									service.
 								</p>
-								<div className="my-5">
+								<div className="my-sm-1 my-lg-5">
 									<p className="font-project-technical my-0">Technology</p>
 									<div className="project-tech-div">
 										<span className="project-tech-span font-project-tech">
@@ -68,13 +68,13 @@ function Oms() {
 							</div>
 
 							<div className="project-nav-div">
-								<div className="col-6 font-project-nav">
+								<div className="font-project-nav">
 									Website Application
 								</div>
 							</div>
 						</div>
 
-						<div className="col-lg-6">
+						<div className="col-12 col-sm-6 col-lg-6">
 							<Swiper
 								modules={[Autoplay, EffectCreative]}
 								className="oms-swiper"
