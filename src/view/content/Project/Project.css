@@ -36,8 +36,8 @@
 }
 
 .project-project-container {
-    height: 429px;
-    max-height: 429px;
+    height: 420px;
+    max-height: 420px;
 }
 
 .project-container {
@@ -162,7 +162,7 @@
         min-height: 1205px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        background-image: url('../../../resources/images/bg-lg-project.jpg');
+        background-image: url('../../../resources/images/bg-sm-project.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -291,8 +291,8 @@
     }
 
     .project-project-container {
-        height: 330px;
-        max-height: 330px;
+        height: 325px;
+        max-height: 325px;
     }    
 }
 

@@ -17,121 +17,117 @@ import mtransport_track from "../../../../resources/images/project/mtransport/mt
 SwiperCore.use([Pagination]);
 
 function MTransport() {
+	const pagination = {
+		clickable: true,
+		renderBullet: function (index, className) {
+			return (
+				'<span class="' + className + ' custom-pagination-project"></span>'
+			);
+		},
+	};
 
-    const pagination = {
-        clickable: true,
-        renderBullet: function (index, className) {
-            return (
-                '<span class="' + className + ' custom-pagination-project"></span>'
-            );
-        },
-    };
+	return (
+		<div className="row">
+			<div className="col-12">
+				<div className="project-project-container">
+					<div className="w-100 h-100 row project-container">
+						<div className="col-12 col-sm-6 col-lg-6 px-0">
+							<div className="project-desc-div pt-5">
+								<p className="font-project-name my-0">Project Name</p>
+								<p className="font-project-title">mTransport</p>
+								<p className="font-project-desc">
+									a mobile application that functions to manage delivery order
+									to hands of customer who order from Yogya Electronic (Yo-El)
+									by distribution center (DC).
+									<br />
+									<br />
+									<font className="font-project-title">Tracking Order</font>
+									<br />
+									<br />
+									Tracking order is a website that has information about status
+									delivery for customer who order from Yogya Electronic (Yo-El).
+								</p>
+								<div className="my-sm-1 my-lg-5">
+									<p className="font-project-technical my-0">Technology</p>
+									<div className="project-tech-div">
+										<span className="project-tech-span font-project-tech">
+											React Native
+										</span>
+										<span className="project-tech-span font-project-tech">
+											API
+										</span>
+										<span className="project-tech-span font-project-tech">
+											Laravel
+										</span>
+										<span className="project-tech-span font-project-tech">
+											PHP
+										</span>
+									</div>
+								</div>
+							</div>
 
-    return (
-        <div className="row">
-            <div className="col-12">
-                <div className="project-project-container">
-                    <div className="w-100 h-100 row project-container">
-                        <div className="col-12 col-sm-6 col-lg-6 px-0">
-                            <div className="project-desc-div pt-5">
-                                <p className="font-project-name my-0">Project Name</p>
-                                <p className="font-project-title">
-                                    mTransport
-                                </p>
-                                <p className="font-project-desc">
-                                    a mobile application that functions to
-                                    manage delivery order to hands of customer
-                                    who order from Yogya Electronic (Yo-El) by distribution center (DC).
+							<div className="project-nav-div">
+								<div className="font-project-nav">
+									Mobile Application <br />
+									Website Application
+								</div>
+							</div>
+						</div>
 
-                                    <br /><br />
-                                    <font className="font-project-title">
-                                        Tracking Order
-                                    </font>
-                                    <br /><br />
-                                    Tracking order is a website that has information
-                                    about status delivery for customer who order from Yogya Electronic (Yo-El).
-                                </p>
-                                <div className="my-sm-1 my-lg-5">
-                                    <p className="font-project-technical my-0">Technology</p>
-                                    <div className="project-tech-div">
-                                        <span className="project-tech-span font-project-tech">
-                                            React Native
-                                        </span>
-                                        <span className="project-tech-span font-project-tech">
-                                            API
-                                        </span>
-                                        <span className="project-tech-span font-project-tech">
-                                            Laravel
-                                        </span>
-                                        <span className="project-tech-span font-project-tech">
-                                            PHP
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="project-nav-div">
-                                <div className="font-project-nav">
-                                    Mobile Application <br />
-                                    Website Application
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-12 col-sm-6 col-lg-6">
-                            <Swiper
-                                modules={[Autoplay, EffectCreative]}
-                                className="mtransport-swiper"
-                                autoplay={false}
-                                speed={1000}
-                                pagination={pagination}
-                                slidesPerView={1}
-                                effect={"creative"}
-                                grabCursor={true}
-                                creativeEffect={{
-                                    prev: {
-                                        shadow: false,
-                                        translate: [0, 0, -400],
-                                    },
-                                    next: {
-                                        translate: ["100%", 0, 0],
-                                    },
-                                }}
-                            >
-                                <SwiperSlide>
-                                    <div className="mtransport-slide">
-                                        <img
-                                            src={mtransport_scheme}
-                                            className="mtransport-image"
-                                            alt="mtransport scheme"
-                                        />
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="mtransport-slide">
-                                        <img
-                                            src={mtransport_dashboard}
-                                            className="mtransport-image"
-                                            alt="mtransport dashboard"
-                                        />
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="mtransport-slide">
-                                        <img
-                                            src={mtransport_track}
-                                            className="mtransport-image"
-                                            alt="mtransport track"
-                                        />
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+						<div className="col-12 col-sm-6 col-lg-6">
+							<Swiper
+								modules={[Autoplay, EffectCreative]}
+								className="mtransport-swiper"
+								autoplay={false}
+								speed={1000}
+								pagination={pagination}
+								slidesPerView={1}
+								effect={"creative"}
+								grabCursor={true}
+								creativeEffect={{
+									prev: {
+										shadow: false,
+										translate: [0, 0, -400],
+									},
+									next: {
+										translate: ["100%", 0, 0],
+									},
+								}}
+							>
+								<SwiperSlide>
+									<div className="mtransport-slide">
+										<img
+											src={mtransport_scheme}
+											className="mtransport-image"
+											alt="mtransport scheme"
+										/>
+									</div>
+								</SwiperSlide>
+								<SwiperSlide>
+									<div className="mtransport-slide">
+										<img
+											src={mtransport_dashboard}
+											className="mtransport-image"
+											alt="mtransport dashboard"
+										/>
+									</div>
+								</SwiperSlide>
+								<SwiperSlide>
+									<div className="mtransport-slide">
+										<img
+											src={mtransport_track}
+											className="mtransport-image"
+											alt="mtransport track"
+										/>
+									</div>
+								</SwiperSlide>
+							</Swiper>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default MTransport;

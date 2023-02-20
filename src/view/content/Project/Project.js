@@ -7,7 +7,7 @@ import "./Project.css";
 import Oms from "./OMS/Oms";
 import Pim from "./PIM/Pim";
 import Yom from "./YOM/Yom";
-import Mtransport from "./mTransport/Mtransport";
+import Mtransport from "./mTransport/MTransport";
 import Pettycash from "./pettyCash/Pettycash";
 import Puskim from "./Puskim/Puskim";
 
@@ -18,7 +18,7 @@ function Project() {
 
 	useEffect(() => {
 		swiperRef.current.swiper.slideTo(activeIndex);
-	}, [activeIndex])
+	}, [activeIndex]);
 
 	const moveSlide = (x) => {
 		dispatch(move(x));
@@ -30,11 +30,11 @@ function Project() {
 				<div className="container">
 					<div className="row">
 						<div className="col-12">
-							<p className="font-project mb-sm-1 mb-md-1 mb-lg-5 d-none d-md-block text-center">
+							<p className="font-project mb-sm-1 mb-md-1 mb-lg-4 d-none d-md-block text-center">
 								{" "}
 								Some Things I've Built{" "}
 							</p>
-							<p className="font-project mb-sm-1 mb-md-1 mb-lg-5 d-block d-md-none">
+							<p className="font-project mb-sm-1 mb-md-1 mb-lg-4 d-block d-md-none">
 								Some Things I've Built
 							</p>
 						</div>
@@ -70,12 +70,42 @@ function Project() {
 					<div className="row">
 						<div className="col-12 d-flex align-items-center justify-content-center">
 							<div id="pagination-project">
-								<button onClick={() => moveSlide(0)} className={activeIndex === 0 ? "button-page active" : "button-page"}></button>
-								<button onClick={() => moveSlide(1)} className={activeIndex === 1 ? "button-page active" : "button-page"}></button>
-								<button onClick={() => moveSlide(2)} className={activeIndex === 2 ? "button-page active" : "button-page"}></button>
-								<button onClick={() => moveSlide(3)} className={activeIndex === 3 ? "button-page active" : "button-page"}></button>
-								<button onClick={() => moveSlide(4)} className={activeIndex === 4 ? "button-page active" : "button-page"}></button>
-								<button onClick={() => moveSlide(5)} className={activeIndex === 5 ? "button-page active" : "button-page"}></button>
+								<button
+									onClick={() => moveSlide(0)}
+									className={
+										activeIndex === 0 ? "button-page active" : "button-page"
+									}
+								></button>
+								<button
+									onClick={() => moveSlide(1)}
+									className={
+										activeIndex === 1 ? "button-page active" : "button-page"
+									}
+								></button>
+								<button
+									onClick={() => moveSlide(2)}
+									className={
+										activeIndex === 2 ? "button-page active" : "button-page"
+									}
+								></button>
+								<button
+									onClick={() => moveSlide(3)}
+									className={
+										activeIndex === 3 ? "button-page active" : "button-page"
+									}
+								></button>
+								<button
+									onClick={() => moveSlide(4)}
+									className={
+										activeIndex === 4 ? "button-page active" : "button-page"
+									}
+								></button>
+								<button
+									onClick={() => moveSlide(5)}
+									className={
+										activeIndex === 5 ? "button-page active" : "button-page"
+									}
+								></button>
 							</div>
 						</div>
 					</div>
