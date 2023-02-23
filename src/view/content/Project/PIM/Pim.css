@@ -1,6 +1,6 @@
 .pim-swiper {
 	height: 100%;
-	background-image: url("./../../../../resources/images/project/pim/bg-pim.jpg");
+	background-image: url("./../../../../resources/images/project/pim/bg-pim.webp");
 	background-size: cover;
 }
 
@@ -35,7 +35,7 @@
 
 	.pim-swiper {
 		height: 100%;
-		background-image: url("./../../../../resources/images/project/pim/bg-pim-sm.jpg");
+		background-image: url("./../../../../resources/images/project/pim/bg-pim-sm.webp");
 		background-size: cover;
 	}
 }

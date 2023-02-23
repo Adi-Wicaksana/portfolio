@@ -1,6 +1,6 @@
 .pettycash-swiper {
 	height: 100%;
-	background-image: url("./../../../../resources/images/project/pettycash/bg-pettycash.jpg");
+	background-image: url("./../../../../resources/images/project/pettycash/bg-pettycash.webp");
 	background-size: cover;
 }
 
@@ -35,7 +35,7 @@
 
 	.pettycash-swiper {
 		height: 100%;
-		background-image: url("./../../../../resources/images/project/pettycash/bg-pettycash-sm.jpg");
+		background-image: url("./../../../../resources/images/project/pettycash/bg-pettycash-sm.webp");
 		background-size: cover;
 	}
 }

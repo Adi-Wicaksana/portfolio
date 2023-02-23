@@ -20,7 +20,7 @@ function Home() {
 
 	useEffect(() => {
 		dispatch(myExperience());
-	}, [dispatch])
+	}, [dispatch]);
 
 	const familiars = useSelector((state) => state.familiar.data);
 
@@ -38,8 +38,9 @@ function Home() {
 										a Full Stack Developer located in Indonesia. I build
 										anything from mobile to web app.
 										<br />
-										<br />{experience} years of experience in web development. Feel free to
-										talk to me okay.
+										<br />
+										{experience} years of experience in web development. Feel
+										free to talk to me okay.
 									</p>
 								</div>
 							</div>

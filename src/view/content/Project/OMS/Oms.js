@@ -9,10 +9,10 @@ import "./Oms.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import oms_dashboard from "../../../../resources/images/project/oms/oms_dashboard_p.png";
-import oms_detail from "../../../../resources/images/project/oms/oms_detail_p.png";
-import oms_graphic from "../../../../resources/images/project/oms/oms_graphic_p.png";
-import oms_scheme from "../../../../resources/images/project/oms/oms_scheme_p.png";
+import oms_dashboard from "../../../../resources/images/project/oms/oms_dashboard_p.webp";
+import oms_detail from "../../../../resources/images/project/oms/oms_detail_p.webp";
+import oms_graphic from "../../../../resources/images/project/oms/oms_graphic_p.webp";
+import oms_scheme from "../../../../resources/images/project/oms/oms_scheme_p.webp";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);

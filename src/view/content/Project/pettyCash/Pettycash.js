@@ -9,10 +9,10 @@ import "./Pettycash.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import pettycash_scheme from "../../../../resources/images/project/pettycash/pettycash_scheme_p.png";
-import pettycash_create from "../../../../resources/images/project/pettycash/pettycash_create_p.png";
-import pettycash_list from "../../../../resources/images/project/pettycash/pettycash_list_p.png";
-import pettycash_report from "../../../../resources/images/project/pettycash/pettycash_report_p.png";
+import pettycash_scheme from "../../../../resources/images/project/pettycash/pettycash_scheme_p.webp";
+import pettycash_create from "../../../../resources/images/project/pettycash/pettycash_create_p.webp";
+import pettycash_list from "../../../../resources/images/project/pettycash/pettycash_list_p.webp";
+import pettycash_report from "../../../../resources/images/project/pettycash/pettycash_report_p.webp";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);

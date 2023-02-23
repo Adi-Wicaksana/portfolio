@@ -1,3 +1,3 @@
-import pp from "./pp.png";
+import pp from "./pp.webp";
 
-export default (pp);
+export default pp;

@@ -9,10 +9,10 @@ import "./Pim.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import pim_flashsale from "../../../../resources/images/project/pim/pim_flashsale_p.png";
-import pim_category from "../../../../resources/images/project/pim/pim_category_p.png";
-import pim_product from "../../../../resources/images/project/pim/pim_product_p.png";
-import pim_scheme from "../../../../resources/images/project/pim/pim_scheme_p.png";
+import pim_flashsale from "../../../../resources/images/project/pim/pim_flashsale_p.webp";
+import pim_category from "../../../../resources/images/project/pim/pim_category_p.webp";
+import pim_product from "../../../../resources/images/project/pim/pim_product_p.webp";
+import pim_scheme from "../../../../resources/images/project/pim/pim_scheme_p.webp";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);

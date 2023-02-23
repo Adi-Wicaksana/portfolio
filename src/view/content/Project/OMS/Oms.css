@@ -1,6 +1,6 @@
 .oms-swiper {
 	height: 100%;
-	background-image: url("./../../../../resources/images/project/oms/bg-oms.jpg");
+	background-image: url("./../../../../resources/images/project/oms/bg-oms.webp");
 	background-size: cover;
 }
 
@@ -35,7 +35,7 @@
 
 	.oms-swiper {
 		height: 100%;
-		background-image: url("./../../../../resources/images/project/oms/bg-oms-sm.jpg");
+		background-image: url("./../../../../resources/images/project/oms/bg-oms-sm.webp");
 		background-size: cover;
 	}
 }

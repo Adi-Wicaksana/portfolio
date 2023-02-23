@@ -9,9 +9,9 @@ import "./Puskim.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import puskim_1 from "../../../../resources/images/project/puskim/puskim_1_p.png";
-import puskim_2 from "../../../../resources/images/project/puskim/puskim_2_p.png";
-import puskim_3 from "../../../../resources/images/project/puskim/puskim_3_p.png";
+import puskim_1 from "../../../../resources/images/project/puskim/puskim_1_p.webp";
+import puskim_2 from "../../../../resources/images/project/puskim/puskim_2_p.webp";
+import puskim_3 from "../../../../resources/images/project/puskim/puskim_3_p.webp";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);

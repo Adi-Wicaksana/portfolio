@@ -9,9 +9,9 @@ import "./Mtransport.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import mtransport_scheme from "../../../../resources/images/project/mtransport/mtransport_scheme_p.png";
-import mtransport_dashboard from "../../../../resources/images/project/mtransport/mtransport_dashboard_p.png";
-import mtransport_track from "../../../../resources/images/project/mtransport/mtransport_track_p.png";
+import mtransport_scheme from "../../../../resources/images/project/mtransport/mtransport_scheme_p.webp";
+import mtransport_dashboard from "../../../../resources/images/project/mtransport/mtransport_dashboard_p.webp";
+import mtransport_track from "../../../../resources/images/project/mtransport/mtransport_track_p.webp";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);
@@ -44,9 +44,9 @@ function MTransport() {
 									<font className="font-project-title">Tracking Order</font>
 									<br />
 									Tracking order is a website that has information about status
-									delivery for customer who order from Yogya Electronic (Yo-El).
+									delivery for customer.
 								</p>
-								<div className="my-sm-1 my-lg-5">
+								<div className="my-sm-1 my-lg-4">
 									<p className="font-project-technical my-0">Technology</p>
 									<div className="project-tech-div">
 										<span className="project-tech-span font-project-tech">
@@ -65,7 +65,7 @@ function MTransport() {
 								</div>
 							</div>
 
-							<div className="d-none d-sm-block project-nav-div">
+							<div className="project-nav-div">
 								<div className="font-project-nav">
 									Mobile Application <br />
 									Website Application

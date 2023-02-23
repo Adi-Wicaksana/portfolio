@@ -1,6 +1,6 @@
 .mtransport-swiper {
 	height: 100%;
-	background-image: url("./../../../../resources/images/project/mtransport/bg-mtransport.jpg");
+	background-image: url("./../../../../resources/images/project/mtransport/bg-mtransport.webp");
 	background-size: cover;
 }
 
@@ -35,7 +35,7 @@
 
 	.mtransport-swiper {
 		height: 100%;
-		background-image: url("./../../../../resources/images/project/mtransport/bg-mtransport-sm.jpg");
+		background-image: url("./../../../../resources/images/project/mtransport/bg-mtransport-sm.webp");
 		background-size: cover;
 	}
 }

@@ -9,8 +9,8 @@ import "./Yom.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import yom_scheme from "../../../../resources/images/project/yom/yom_scheme_p.png";
-import yom_magento from "../../../../resources/images/project/yom/yom_magento_p.png";
+import yom_scheme from "../../../../resources/images/project/yom/yom_scheme_p.webp";
+import yom_magento from "../../../../resources/images/project/yom/yom_magento_p.webp";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);
