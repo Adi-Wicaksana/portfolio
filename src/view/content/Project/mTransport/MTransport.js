@@ -31,7 +31,7 @@ function MTransport() {
 			<div className="col-12">
 				<div className="project-project-container">
 					<div className="w-100 h-100 row project-container">
-						<div className="col-12 col-sm-6 col-lg-6 px-0">
+						<div className="col-12 col-sm-6 col-lg-6 px-0 max-project-div">
 							<div className="project-desc-div pt-5">
 								<p className="font-project-name my-0">Project Name</p>
 								<p className="font-project-title">mTransport</p>
@@ -42,7 +42,6 @@ function MTransport() {
 									<br />
 									<br />
 									<font className="font-project-title">Tracking Order</font>
-									<br />
 									<br />
 									Tracking order is a website that has information about status
 									delivery for customer who order from Yogya Electronic (Yo-El).
@@ -66,7 +65,7 @@ function MTransport() {
 								</div>
 							</div>
 
-							<div className="project-nav-div">
+							<div className="d-none d-sm-block project-nav-div">
 								<div className="font-project-nav">
 									Mobile Application <br />
 									Website Application
@@ -74,7 +73,7 @@ function MTransport() {
 							</div>
 						</div>
 
-						<div className="col-12 col-sm-6 col-lg-6">
+						<div className="col-12 col-sm-6 col-lg-6 px-0 max-project-div">
 							<Swiper
 								modules={[Autoplay, EffectCreative]}
 								className="mtransport-swiper"

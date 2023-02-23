@@ -1,72 +1,77 @@
-
 .mtransport-swiper {
-    height: 100%;
-    background-image: url('./../../../../resources/images/project/mtransport/bg-mtransport.jpg');
-    background-size: cover;
+	height: 100%;
+	background-image: url("./../../../../resources/images/project/mtransport/bg-mtransport.jpg");
+	background-size: cover;
 }
 
-.mtransport-swiper.swiper-horizontal>.swiper-pagination-bullets {
-    bottom: 20px;
+.mtransport-swiper.swiper-horizontal > .swiper-pagination-bullets {
+	bottom: 0;
 }
 
 .mtransport-slide {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .mtransport-image {
-    width: 100%;
-    height: 100%;
-    max-height: 350px;
+	width: 100%;
+	height: 100%;
+	max-height: 385px;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
-    .mtransport-image {
-        width: 100%;
-        height: 100%;
-        max-height: 275px;
-    }
+	.mtransport-image {
+		width: 100%;
+		height: 100%;
+		max-height: 275px;
+	}
 
-    .mtransport-swiper.swiper-horizontal>.swiper-pagination-bullets {
-        bottom: 0px;
-    }
+	.mtransport-swiper.swiper-horizontal > .swiper-pagination-bullets {
+		bottom: 0px;
+	}
+
+	.mtransport-swiper {
+		height: 100%;
+		background-image: url("./../../../../resources/images/project/mtransport/bg-mtransport-sm.jpg");
+		background-size: cover;
+	}
 }
 
 @media (min-width: 575.98px) and (max-width: 767.98px) {
-    .mtransport-image {
-        width: 90%;
-        height: 60%;
-        max-height: 275px;
-    }
+	.mtransport-image {
+		width: 90%;
+		height: 60%;
+		max-height: 275px;
+	}
 
-    .mtransport-swiper.swiper-horizontal>.swiper-pagination-bullets {
-        bottom: 50px;
-    }
+	.mtransport-swiper.swiper-horizontal > .swiper-pagination-bullets {
+		bottom: 50px;
+	}
 }
 
 @media (min-width: 767.98px) and (max-width: 991.98px) {
-    .mtransport-image {
-        width: 90%;
-        height: 60%;
-        max-height: 275px;
-    }
+	.mtransport-image {
+		width: 90%;
+		height: 60%;
+		max-height: 275px;
+	}
 
-    .mtransport-swiper.swiper-horizontal>.swiper-pagination-bullets {
-        bottom: 50px;
-    }
+	.mtransport-swiper.swiper-horizontal > .swiper-pagination-bullets {
+		bottom: 50px;
+	}
 }
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
-    .mtransport-image {
-        width: 90%;
-        height: 90%;
-        max-height: 275px;
-    }
+	.mtransport-image {
+		width: 90%;
+		height: 90%;
+		max-height: 275px;
+	}
 
-    .mtransport-swiper.swiper-horizontal>.swiper-pagination-bullets {
-        bottom: 55px;
-    }
+	.mtransport-swiper.swiper-horizontal > .swiper-pagination-bullets {
+		bottom: 55px;
+	}
 }
