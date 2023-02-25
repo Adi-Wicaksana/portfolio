@@ -36,9 +36,9 @@ function MTransport() {
 								<p className="font-project-name my-0">Project Name</p>
 								<p className="font-project-title">mTransport</p>
 								<p className="font-project-desc">
-									a mobile application that functions to manage delivery order
-									to hands of customer who order from Yogya Electronic (Yo-El)
-									by distribution center (DC).
+									a mobile application to manage delivery order to hands of
+									customer who order from Yogya Electronic (Yo-El) by
+									distribution center (DC).
 									<br />
 									<br />
 									<font className="font-project-title">Tracking Order</font>
