@@ -38,13 +38,8 @@ function MTransport() {
 								<p className="font-project-desc">
 									a mobile application to manage delivery order to hands of
 									customer who order from Yogya Electronic (Yo-El) by
-									distribution center (DC).
-									<br />
-									<br />
-									<font className="font-project-title">Tracking Order</font>
-									<br />
-									Tracking order is a website that has information about status
-									delivery for customer.
+									distribution center (DC). The app has integration to tracking
+									order that has information about status delivery for customer.
 								</p>
 								<div className="my-sm-1 my-lg-4">
 									<p className="font-project-technical my-0">Technology</p>
