@@ -10,6 +10,7 @@ import Yom from "./YOM/Yom";
 import Mtransport from "./mTransport/MTransport";
 import Pettycash from "./pettyCash/Pettycash";
 import Puskim from "./Puskim/Puskim";
+import Iot from "./IOT/Iot";
 
 function Project() {
 	const dispatch = useDispatch();
@@ -65,6 +66,9 @@ function Project() {
 						<SwiperSlide key={5}>
 							<Puskim />
 						</SwiperSlide>
+						<SwiperSlide key={6}>
+							<Iot />
+						</SwiperSlide>
 					</Swiper>
 
 					<div className="row">
@@ -104,6 +108,12 @@ function Project() {
 									onClick={() => moveSlide(5)}
 									className={
 										activeIndex === 5 ? "button-page active" : "button-page"
+									}
+								></button>
+								<button
+									onClick={() => moveSlide(6)}
+									className={
+										activeIndex === 6 ? "button-page active" : "button-page"
 									}
 								></button>
 							</div>
