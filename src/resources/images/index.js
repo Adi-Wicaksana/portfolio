@@ -1,3 +1,9 @@
 import pp from "./pp.webp";
+import pp_real from "./pp_real.webp";
 
-export default pp;
+const images = {
+	pp: pp,
+	pp_real: pp_real,
+};
+
+export default images;

@@ -7,7 +7,7 @@ import { Mousewheel, FreeMode } from "swiper";
 import { myExperience } from "../../../features/about/personalSlice";
 import ReactTooltip from "react-tooltip";
 
-import pp from "../../../resources/images";
+import images_pp from "../../../resources/images";
 
 import "swiper/css/mousewheel";
 import "swiper/css/free-mode";
@@ -25,7 +25,7 @@ function Home() {
 	const familiars = useSelector((state) => state.familiar.data);
 
 	return (
-		<div className="row mx-0 swiper-slide">
+		<div className="row mx-0">
 			<div className="col-12 home-content-wrap">
 				<div className="container">
 					<div className="row xs-hidden">
@@ -109,7 +109,11 @@ function Home() {
 						</div>
 						<div className="col-md-4">
 							<div className="d-flex align-items-end justify-content-center h-100">
-								<img alt="profile" className="img-fluid pp" src={pp} />
+								<img
+									alt="profile"
+									className="img-fluid pp"
+									src={images_pp.pp_real}
+								/>
 							</div>
 						</div>
 						<div className="mt-3 mt-sm-3 mt-md-0 col-md-4">

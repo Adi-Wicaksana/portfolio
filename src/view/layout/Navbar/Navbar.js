@@ -1,24 +1,16 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { move } from "../../../features/swiper/navbarSlice";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 // stylesheet
 import "./Navbar.css";
 
 function Navbar() {
-	const activeIndex = useSelector((state) => state.navbar.index);
-	const dispatch = useDispatch();
-
-	const moveSlide = (e) => {
-		dispatch(move(e.target.getAttribute("data-slide")));
-	};
-
 	return (
 		<nav className="navbar navbar-expand-sm navbar-expand-md navbar-custom navbar-light">
 			<div className="container-fluid">
-				<a className="navbar-brand ps-3 font-portfolio" href="/">
-					Portfolio<font className="font-portfolio-dot">.</font>{" "}
-				</a>
+				<Link className="navbar-brand ps-3 font-portfolio" to="/">
+					Portfolio<font className="font-portfolio-dot">.</font>
+				</Link>
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -29,45 +21,9 @@ function Navbar() {
 				</button>
 				<div className="collapse navbar-collapse" id="nav-menu">
 					<ul className="navbar-nav m-auto mb-2 mb-sm-0 mb-md-0 mb-lg-0">
-						<li className="nav-item ps-4 ps-md-2">
-							<button
-								className={
-									activeIndex === "0"
-										? "btn btn-link nav-link font-nav-link active"
-										: "btn btn-link nav-link font-nav-link"
-								}
-								data-slide="0"
-								onClick={(e) => moveSlide(e)}
-							>
-								Home
-							</button>
-						</li>
-						<li className="nav-item ps-4 ps-md-2">
-							<button
-								className={
-									activeIndex === "1"
-										? "btn btn-link nav-link font-nav-link active"
-										: "btn btn-link nav-link font-nav-link"
-								}
-								data-slide="1"
-								onClick={(e) => moveSlide(e)}
-							>
-								Works
-							</button>
-						</li>
-						<li className="nav-item ps-4 ps-md-2">
-							<button
-								className={
-									activeIndex === "2"
-										? "btn btn-link nav-link font-nav-link active"
-										: "btn btn-link nav-link font-nav-link"
-								}
-								data-slide="2"
-								onClick={(e) => moveSlide(e)}
-							>
-								Projects
-							</button>
-						</li>
+						<CustomLink to="/">Home</CustomLink>
+						<CustomLink to="/works">Works</CustomLink>
+						<CustomLink to="/projects">Projects</CustomLink>
 					</ul>
 					<form className="d-flex pe-3 mb-3 mb-sm-0 ps-4 ps-md-2">
 						<a
@@ -83,6 +39,27 @@ function Navbar() {
 				</div>
 			</div>
 		</nav>
+	);
+}
+
+function CustomLink({ to, children, ...props }) {
+	const resolvedPath = useResolvedPath(to);
+	const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+	return (
+		<li className="nav-item ps-4 ps-md-2">
+			<Link
+				to={to}
+				{...props}
+				className={
+					isActive
+						? "btn btn-link nav-link font-nav-link active"
+						: "btn btn-link nav-link font-nav-link"
+				}
+			>
+				{children}
+			</Link>
+		</li>
 	);
 }
 

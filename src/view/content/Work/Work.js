@@ -4,7 +4,7 @@ import "./Work.css";
 
 function Work() {
 	return (
-		<div className="row mx-0 swiper-slide">
+		<div className="row mx-0">
 			<div className="col-12 d-flex align-items-center justify-content-center work-content-wrap">
 				{/* LARGE DEVICE */}
 				<div className="container d-none d-md-block">

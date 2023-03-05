@@ -25,7 +25,7 @@ function Project() {
 	};
 
 	return (
-		<div className="row mx-0 swiper-slide">
+		<div className="row mx-0">
 			<div className="col-12 d-flex align-items-center justify-content-center project-content-wrap">
 				<div className="container">
 					<div className="row">
