@@ -1,5 +1,6 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion"
 
 // stylesheet
 import "swiper/css";
@@ -10,12 +11,16 @@ import Work from "./Work/Work";
 import Project from "./Project/Project";
 
 function Main() {
+	const location = useLocation();
+
 	return (
-		<Routes>
-			<Route path="/" element={<Home />}></Route>
-			<Route path="/works" element={<Work />}></Route>
-			<Route path="/projects" element={<Project />}></Route>
-		</Routes>
+		<AnimatePresence mode="wait">
+			<Routes>
+				<Route path="/" element={<Home />}></Route>
+				<Route path="/works" element={<Work />}></Route>
+				<Route path="/projects" element={<Project />}></Route>
+			</Routes>
+		</AnimatePresence>
 	);
 }
 
