@@ -172,9 +172,6 @@ function Home() {
 										</div>
 									</div>
 								</div>
-								<div className="d-flex align-items-end justify-content-end home-inspired-div">
-									{/* <p className="py-1 font-inspired">Design Inspired by : Irvan Moses</p> */}
-								</div>
 							</div>
 						</div>
 					</div>

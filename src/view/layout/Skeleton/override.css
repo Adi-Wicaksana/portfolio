@@ -11,11 +11,16 @@
     border-radius: 10px !important;
 }
 
-.btn:focus,.btn:active {
+.btn:focus,
+.btn:active {
     outline: none !important;
     box-shadow: none;
- }
+}
 
- .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
     border-color: transparent;
- }
+}

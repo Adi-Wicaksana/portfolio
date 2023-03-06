@@ -136,7 +136,7 @@
         border-bottom: solid 3px #019fb6;
         transform: scaleX(0.5);
         transition: transform 350ms ease-in-out;
-    }    
+    }
 
     .font-nav-link {
         font-family: "Poppins-Medium";
