@@ -53,8 +53,8 @@ function CustomLink({ to, children, ...props }) {
 				{...props}
 				className={
 					isActive
-						? "btn btn-link nav-link font-nav-link active"
-						: "btn btn-link nav-link font-nav-link"
+						? "btn btn-link nav-link font-nav-link text-start active"
+						: "btn btn-link nav-link font-nav-link text-start"
 				}
 			>
 				{children}

@@ -14,7 +14,7 @@ import Main from "../../content/Main";
 function Skeleton() {
 	return (
 		<div>
-			<div className="container">
+			<div className="container position-relative">
 				<Navbar />
 				<Main />
 			</div>
